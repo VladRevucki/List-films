@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+		<link rel="stylesheet" href="/styles.css" />
+		<script defer src="/script.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<form id="film-form">
+			<div class="form__wrap">
+				<label for="title">Название:</label>
+				<input type="text" id="title" name="title" /><br />
+			</div>
+			<div class="form__wrap">
+				<label for="genre">Жанр:</label>
+				<input type="text" id="genre" name="genre" /><br />
+			</div>
+			<div class="form__wrap">
+				<label for="releaseYear">Год:</label>
+				<input type="text" id="releaseYear" name="releaseYear" /><br />
+			</div>
+			<input type="checkbox" id="isWatched" name="isWatched" />
+			<label for="isWatched">Успели посмотреть?</label><br />
+			<input type="submit" value="Submit" />
+		</form>
+		<div class="block">
+			<div class="block__filter">
+				<input
+					type="text"
+					name=""
+					id="input__title"
+					placeholder="Название фильма"
+				/>
+				<input type="text" name="" id="input__genre" placeholder="Жанр" />
+				<input
+					type="text"
+					name=""
+					id="input__releaseYear"
+					placeholder="Год релиза"
+				/>
+				<select name="" id="select__filter">
+					<option value="all">Все</option>
+					<option value="title">Название</option>
+					<option value="genre">Жанр</option>
+					<option value="releaseYear">Год</option>
+					<option value="isWatched">Смотрел?</option>
+				</select>
+			</div>
+			<button class="deleteAllBtn">Удалить все</button>
+		</div>
+		<table id="film-table">
+			<thead>
+				<tr>
+					<th>Название</th>
+					<th>Жанр</th>
+					<th>Год</th>
+					<th>Успели посмотреть?</th>
+					<th>Действие</th>
+				</tr>
+			</thead>
+			<tbody id="film-tbody">
+				<!-- Rows will be inserted here -->
+			</tbody>
+		</table>
+	</body>
+</html>

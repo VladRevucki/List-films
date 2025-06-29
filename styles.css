@@ -1,0 +1,110 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	padding: 30px;
+	color: #333;
+}
+
+form {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #999;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+form input[type='checkbox'] {
+	margin-bottom: 20px;
+}
+
+form input[type='submit'] {
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 5px;
+}
+
+form input[type='submit']:hover {
+	background-color: #444;
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	border-collapse: collapse;
+	box-shadow: 0px 0px 5px #999;
+}
+
+th,
+td {
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+}
+
+td {
+	vertical-align: top;
+}
+
+.deleteBtn,
+.deleteAllBtn {
+	background-color: rgb(193, 3, 3);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 40px;
+}
+
+.block__filter {
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.block {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.block__filter {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	width: 75%;
+}
+
+.block__filter input,
+select {
+	padding: 10px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	width: 25%;
+}
+.form__wrap {
+	margin-bottom: 10px;
+}
